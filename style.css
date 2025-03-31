@@ -33,19 +33,13 @@ html {
     display: inline;
 }
 
-/* Website logo. */
-.horizontalNav #logo {
-    float: left;
-    max-height: 68px;
-}
-
 /* Links section for horizontal navigation bar. */
 .horizontalNav .navLinks {
     list-style-type: none; /* Removes the bullets. */
     margin: 0; /* Removes brouser setting defaults */
     padding: 0; /* Removes brouser setting defaults */
     overflow: hidden;
-    background-color: navy; /* Sets background color */
+    background-image: url("background_images/website_banner.png"); /* Sets background image */
   }
 
 /* Individual links for naviation bar. */
