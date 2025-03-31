@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Education</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body id="education_background" class="background">
+    <!-- Header for announcements-->
+    <header class="header">
+    </header>
+
+    <!-- Horizontal navigation menu to change pages. -->
+    <nav class="horizontalNav">
+        <ul class="navLinks">
+            <img src="Images/White DE.png" id="logo">
+            <li><a href="navy.html">Navy</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="about-me.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        <button id="open-button" onclick="showMenu('myVerticalNav')">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </button>
+    </nav>
+
+    <!-- Vertical navigation menu to change pages. -->
+    <nav class="verticalNav" id="myVerticalNav">
+        <button id="close-button" onclick="hideMenu('myVerticalNav')">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </button>
+        <ul class="navLinks">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about-me.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="navy.html">Navy</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main contents of education page. -->
+    <article class="contents">
+        <img src="Images/education.jpeg" class="showcase-photo">
+        <h1>My Education</h1>
+        <h2>University Of Arizona</h2>
+        <b>Bachelors of Science in Computer Science</b><br>
+        <b>Minor in Military Science and Leadership</b><br>
+        <em>August 2019 - December 2023</em><br>
+
+        <h2>Marana High School</h2>
+        <b>August 2015 - May 2019</b>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+    </footer>
+</body>
+</html>

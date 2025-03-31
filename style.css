@@ -1,0 +1,160 @@
+/* Font settings for entire website. */
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.background {
+    background-size: cover;
+}
+
+#home_background { background-image: url("background_images/home_background.png"); }
+#about_background { background-image: url("background_images/about_me_background.png"); }
+#education_background { background-image: url("background_images/education_background.png"); }
+#navy_background { background-image: url("background_images/navy_background.png"); }
+
+.background {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* Header section of the website. */
+.header {
+    background-color: goldenrod;
+    margin: 0; /* Removes brouser setting defaults */
+    padding: 0; /* Removes brouser setting defaults */
+    color: white;
+    text-align: center;
+}
+
+/* Horizontal navigation section of the website. */
+.horizontalNav {
+    display: inline;
+}
+
+/* Website logo. */
+.horizontalNav #logo {
+    float: left;
+    max-height: 68px;
+}
+
+/* Links section for horizontal navigation bar. */
+.horizontalNav .navLinks {
+    list-style-type: none; /* Removes the bullets. */
+    margin: 0; /* Removes brouser setting defaults */
+    padding: 0; /* Removes brouser setting defaults */
+    overflow: hidden;
+    background-color: navy; /* Sets background color */
+  }
+
+/* Individual links for naviation bar. */
+.navLinks li {
+    float: right; /* We want links on the right side of the page. */
+    padding: 25px; /* Give some padding between links. */
+}
+
+/* What happens when you hover the mouse over the link. */
+.navLinks li:hover, li:active {
+    background-color: goldenrod;
+}
+
+/* Text of individual links. */
+.navLinks a {
+    color: white;
+    text-decoration: none;
+}
+
+  /* The open button for vertical navigation links for smaller screens. */
+.horizontalNav #open-button{
+    fill: black;
+    border: none;
+    background: none;
+    right: 0;
+    float: right;
+    display: none;
+}
+
+/* Vertical navigation bar. */
+.verticalNav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay at the top */
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden; /* Disable orizontal scroll */
+    padding-top: 60px;
+    transition: 1s;
+    border-color: black;
+    border-style: solid;
+    border-radius: 25px;
+}
+
+/* Links for vertical navigation bar. */
+.verticalNav a {
+    color: goldenrod;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: 1s;
+}
+
+/* Close button for vertical navigation bar. */
+#close-button {
+    fill: black;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    border: none;
+    background: none;
+}
+
+/* Contents section of the page. */
+.contents {
+    color: gold;
+    animation: fadeIn 1s;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    align-content: center;
+    text-shadow: 2px 2px goldenrod;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Animations for page. */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+/* For smaller/mobile screens. */
+@media screen and (max-height: 450px) {
+    .horizontalNav a { display: none; }
+    .verticalNav { 
+        padding-top: 15px;
+        display: flex;
+    }
+    .verticalNav a { font-size: 18px;}
+}
+
+.showcase-photo {
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
